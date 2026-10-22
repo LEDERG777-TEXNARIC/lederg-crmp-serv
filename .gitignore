@@ -1,0 +1,20 @@
+# Live credentials and local server configuration
+server.cfg
+scriptfiles/mysql_settings.ini
+.env
+.env.*
+*.log
+*.tmp
+*.bak
+
+# SQL exports can contain player records/secrets. Only reviewed SQL packages are tracked.
+*.sql
+!database/
+!database/lederg_fresh_install.sql
+!database/migrations/
+!database/migrations/*.sql
+
+# Local build/runtime artifacts
+*.amx
+*.exe
+*.dmp

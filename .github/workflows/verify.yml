@@ -1,0 +1,25 @@
+name: Verify LEDERG source package
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verify branding and repository hygiene
+        run: python tools/verify_rebrand.py
+      - name: Verify sanitized database package
+        run: python tools/verify_database.py

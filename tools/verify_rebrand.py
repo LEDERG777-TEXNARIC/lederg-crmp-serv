@@ -17,6 +17,8 @@ def main() -> int:
         "auto-save preserved": all(x in source for x in ("SaveJBData(b);", "SaveKVData(k);", "SaveABData(a);", "SaveHouseData(h);", "SaveBusinessData(b);", "SaveWarehouse();")),
         "runtime secrets ignored": all(x in ignore for x in ("server.cfg", "scriptfiles/mysql_settings.ini", "*.sql", "*.log")),
         "safe config templates exist": (ROOT / "server.cfg.example").is_file() and (ROOT / "scriptfiles" / "mysql_settings.example.ini").is_file(),
+        "legacy SQL data dump removed from current tree": not (ROOT / "gs147466.sql").exists(),
+        "fresh schema published": (ROOT / "database" / "lederg_fresh_install.sql").is_file(),
     }
     for name, ok in checks.items(): print(("PASS" if ok else "FAIL") + ": " + name)
     return 0 if all(checks.values()) else 1
