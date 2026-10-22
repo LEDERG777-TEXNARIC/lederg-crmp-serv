@@ -1,25 +1,28 @@
-# LEDERG PROJECT — CR:MP RolePlay
+# LEDERG CRMP — RolePlay
 
-Legacy Pawn/CR-MP roleplay gamemode, being rebranded in reviewable steps.
+The active server repository is being modernized in reviewable steps. The game mode is legacy Pawn/CR-MP; deploy only a compiled AMX that matches the exact source revision.
 
-- Server/game-mode name: **LEDERG PROJECT | CR:MP RolePlay**.
-- Faction display names: ID 5 **Бандера ОПГ**, ID 6 **LEDERG ОПГ**, ID 7 **Вагнер ОПГ**. Numeric IDs and database keys are preserved.
-- Removed recurring VK promotion while preserving auto-save calls.
-- Replaced old in-game TextDraw branding.
-- Removed hard-coded MySQL credential macros from the source.
+## Current branch work
+
+- Server configuration branding is set to LEDERG CRMP; the example port is 8904.
+- Legacy account rows and historic player transaction/election rows are omitted from the clean SQL baseline.
+- The clean baseline preserves the world tables and initial world seed data required by the legacy gamemode.
+- Added LEDERG coins, manual Telegram payment order records, shop catalogue, admin permission catalogue and audit tables.
+- Admin permission catalogue contains 120 granular keys; this is a permission schema, not a claim that 120 Pawn handlers are already implemented.
+- The timed VK promotion removal and faction label changes are documented as previously applied, but must be verified in a compatible build and staging server.
 
 ## Setup
 
-1. Use the compiler, server binary, and includes compatible with this legacy CR-MP build; record a baseline compile before any compiler upgrade.
-2. Copy `server.cfg.example` to `server.cfg`, set a unique strong RCON password, and use the port assigned by the provider.
-3. Copy `scriptfiles/mysql_settings.example.ini` to `scriptfiles/mysql_settings.ini` and enter the correct DB settings locally. Never commit the live file.
-4. Compile `gamemodes/new.pwn` and deploy the matching `gamemodes/new.amx`; do not ship a stale AMX after source changes.
-5. Test registration/login, database persistence, organization menus/GPS/storage, capture messages, and auto-save on staging.
+1. Back up any target database and import `database/lederg_crmp_clean.sql` into a **new empty database**. Do not import into the live DB as an in-place replacement.
+2. Copy `server.cfg.example` to `server.cfg` and set a unique RCON password locally.
+3. Copy `scriptfiles/mysql_settings.example.ini` to `scriptfiles/mysql_settings.ini` and fill in the new DB credentials locally. Never commit this file.
+4. Compile `gamemodes/new.pwn` with the compatible Pawn compiler/includes and deploy the resulting `gamemodes/new.amx` from the same revision.
+5. Follow [the admin and coin workflow](docs/LEDERG-ADMIN-COINS.md) and [the modernization roadmap](docs/LEDERG-PROJECT-ROADMAP.md).
 
-## Security warning
+## Security
 
-Earlier public revisions contained runtime credentials and a SQL dump. Removing files from the current tree does **not** erase Git history. Rotate the affected MySQL and RCON credentials immediately and coordinate a history cleanup before considering the public repository clean. Never reuse old credentials.
+Credentials were present in older repository revisions. Replacing/deleting them in the current branch does not erase Git history. Rotate the RCON and database credentials immediately, then clean the public Git history and invalidate the old secrets. Do not reuse any value that was committed.
 
-The included legacy LICENSE restricts distribution and derivative works. Verify rights to modify and redistribute the original server package and preserve upstream notices.
+## License
 
-See `docs/LEDERG-PROJECT-ROADMAP.md` for next steps.
+The repository contains legacy upstream licensing terms that may restrict redistribution or derivative works. Confirm rights before distributing a modified server package.

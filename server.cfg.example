@@ -16,5 +16,5 @@ maxplayers 100
 mapname Criminal Russia
 chatlogging 0
 bind
-port 1130
+port 8904
 plugins crashdetect.so mysql.so mysql_static.so sscanf.so streamer.so iTD.so

@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- База данных: `gs147466`
+-- LEDERG CRMP clean baseline; import into a newly created database
 --
 
 -- --------------------------------------------------------
@@ -155,12 +155,7 @@ CREATE TABLE `accounts` (
 -- Дамп данных таблицы `accounts`
 --
 
-INSERT INTO `accounts` (`id`, `name`, `password`, `email`, `referal`, `money`, `donate`, `donate_p`, `donate_all`, `sex`, `skin`, `lvl`, `exp`, `member`, `podmember`, `rank`, `skinm`, `leader`, `admlvl`, `register_ip`, `login_ip`, `regdate_day`, `regdate_month`, `regdate_year`, `logdate_day`, `logdate_month`, `logdate_year`, `mute`, `mutetime`, `warn`, `warntime`, `salary`, `bank`, `licb`, `licg`, `business`, `house`, `kv`, `padik`, `jb`, `ab`, `car_1`, `carfuel_1`, `car_color1_1`, `car_color2_1`, `car_2`, `carfuel_2`, `car_color1_2`, `car_color2_2`, `car_3`, `carfuel_3`, `car_color1_3`, `car_color2_3`, `patr`, `met`, `drugs`, `wanted`, `number`, `number_m`, `jail`, `jailtime`, `phone`, `phonebook`, `dir`, `satiety`, `hp`, `arm`, `med`, `spawn`, `hospital`, `job`, `polit`, `d_skill`, `d_exp`, `gun0`, `gun1`, `gun2`, `gun3`, `gun4`, `gun5`, `gun6`, `gun7`, `gun8`, `gun9`, `gun10`, `gun11`, `gun12`, `ammo0`, `ammo1`, `ammo2`, `ammo3`, `ammo4`, `ammo5`, `ammo6`, `ammo7`, `ammo8`, `ammo9`, `ammo10`, `ammo11`, `ammo12`, `golos`, `pistol_skill`, `sdpistol_skill`, `deagle_skill`, `shotgun_skill`, `mp5_skill`, `ak47_skill`, `rifle_skill`, `zakon`, `promocode`, `vip`, `time`, `podarok1`, `podarok2`, `podarok3`, `podarok4`, `podarok5`, `podarok6`, `podarok7`, `podarok8`, `contry`) VALUES
-(1, 'lederg', '799ac1bd1a1529983f8da6a766519d77', 'lederg.ru@gmail.com', '', 24650, 0, 0, 0, 1, 20, 1, 1, 0, 0, 0, 0, 0, 13, '104.28.161.35', '104.28.161.35', 11, 10, 2026, 11, 10, 2026, 0, 0, 0, 0, 0, 500, 1, 0, -1, -1, -1, -1, -1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1),
-(2, 'Rock', '68ccba925116024858d2bd60e1e10c3d', 'acc1014acc@bk.ru', 'Lederg', 100000000, 0, 0, 0, 1, 14, 777, 3, 0, 0, 0, 0, 0, 13, '212.55.97.156', '212.55.97.156', 11, 10, 2026, 12, 10, 2026, 0, 0, 0, 0, 0, 36000, 1, 0, -1, -1, -1, -1, -1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, 100, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 0, 0, 100, 0, 0, 126, 0, 1, 0, 1, 1, 0, 1, 0, 1),
-(3, 'adam00', '30e9a70b50e936f40de119ec2c718a28', 'asanpyrmenov@mail.com', '', 0, 0, 0, 0, 1, 24, 1, 0, 0, 0, 0, 0, 0, 0, '193.41.130.214', '193.41.130.214', 11, 10, 2026, 11, 10, 2026, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1, -1, -1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 4),
-(4, 'varyag', 'e10adc3949ba59abbe56e057f20f883e', '21332t@mail.ru', '', 0, 0, 0, 0, 1, 14, 1, 0, 0, 0, 0, 0, 0, 0, '185.72.184.18', '185.72.184.18', 11, 10, 2026, 11, 10, 2026, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1, -1, -1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-
+-- Player accounts intentionally empty; first registration creates the first account.
 -- --------------------------------------------------------
 
 --
@@ -1171,26 +1166,7 @@ CREATE TABLE `log_transfermoney` (
 -- Дамп данных таблицы `log_transfermoney`
 --
 
-INSERT INTO `log_transfermoney` (`id`, `name`, `date`, `time`, `text`) VALUES
-(1, 'admin', '2016-10-27', '17:19:56', '220 #7'),
-(2, 'admin', '2016-10-27', '17:21:00', '0 #6'),
-(3, 'admin', '2016-10-27', '17:21:36', '200 #6'),
-(4, 'admin', '2016-10-27', '17:22:53', '140 #31'),
-(5, 'admin', '2016-10-27', '17:26:02', '140 #43'),
-(6, 'admin', '2016-11-09', '18:02:56', '0 #58'),
-(7, 'admin', '2016-11-09', '18:04:58', '720 #68'),
-(8, 'admin', '2016-12-01', '15:59:29', '200 pod'),
-(9, 'lederg', '2026-10-11', '01:04:33', '19000 #15'),
-(10, 'lederg', '2026-10-11', '01:05:04', '9500 pod'),
-(11, 'lederg', '2026-10-11', '01:05:10', '-5000 #14'),
-(12, 'lederg', '2026-10-11', '01:35:08', '1150 pod'),
-(13, 'Rock', '2026-10-11', '12:40:58', '18000 #15'),
-(14, 'Rock', '2026-10-11', '12:41:21', '560 pod'),
-(15, 'Rock', '2026-10-11', '12:41:26', '-5000 #14'),
-(16, 'Rock', '2026-10-11', '13:18:50', '7050 pod'),
-(17, 'Rock', '2026-10-11', '14:04:27', '1150 pod'),
-(18, 'Rock', '2026-10-11', '14:04:40', '5200 pod');
-
+-- Historical money-transfer logs intentionally cleared.
 -- --------------------------------------------------------
 
 --
@@ -1215,9 +1191,7 @@ CREATE TABLE `log_vibory` (
 -- Дамп данных таблицы `log_vibory`
 --
 
-INSERT INTO `log_vibory` (`id`, `name_1`, `name_2`, `name_3`, `name_4`, `name_5`, `golos_1`, `golos_2`, `golos_3`, `golos_4`, `golos_5`) VALUES
-(1, 'Привет', 'Здрасти', 'Пока', 'Досвидания', 'Досвидули', 1, 1, 0, 0, 0);
-
+-- Historical election logs intentionally cleared.
 -- --------------------------------------------------------
 
 --
@@ -1346,7 +1320,7 @@ ALTER TABLE `polit_team`
 -- AUTO_INCREMENT для таблицы `accounts`
 --
 ALTER TABLE `accounts`
-  MODIFY `id` int(111) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(111) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
 --
 -- AUTO_INCREMENT для таблицы `auto_business`
@@ -1382,7 +1356,7 @@ ALTER TABLE `houses`
 -- AUTO_INCREMENT для таблицы `job_business`
 --
 ALTER TABLE `job_business`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
 --
 -- AUTO_INCREMENT для таблицы `kvartiry`
@@ -1406,7 +1380,7 @@ ALTER TABLE `log_player`
 -- AUTO_INCREMENT для таблицы `log_transfermoney`
 --
 ALTER TABLE `log_transfermoney`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
 --
 -- AUTO_INCREMENT для таблицы `polit_team`
@@ -1418,3 +1392,241 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
+-- LEDERG CRMP: secure staff permissions, audit trail, coins and manual-payment shop.
+-- This is additive to the legacy game schema; it does not change accounts columns.
+CREATE TABLE IF NOT EXISTS `lederg_admin_permissions` (
+  `permission_key` varchar(64) NOT NULL,
+  `category` varchar(32) NOT NULL,
+  PRIMARY KEY (`permission_key`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+INSERT IGNORE INTO `lederg_admin_permissions` (`permission_key`, `category`) VALUES
+('view_player','player'),
+('view_player_ip','player'),
+('view_player_stats','player'),
+('view_player_inventory','player'),
+('view_player_history','player'),
+('spectate_player','player'),
+('freeze_player','player'),
+('unfreeze_player','player'),
+('heal_player','player'),
+('armour_player','player'),
+('set_skin','player'),
+('set_interior','player'),
+('set_virtual_world','player'),
+('teleport_to_player','player'),
+('bring_player','player'),
+('return_player','player'),
+('slap_player','player'),
+('kick_player','player'),
+('tempban_player','player'),
+('permban_player','player'),
+('unban_player','player'),
+('mute_player','player'),
+('unmute_player','player'),
+('warn_player','player'),
+('clear_warnings','player'),
+('jail_player','player'),
+('unjail_player','player'),
+('set_wanted','player'),
+('clear_wanted','player'),
+('set_level','player'),
+('set_exp','player'),
+('set_money','player'),
+('take_money','player'),
+('set_bank','player'),
+('set_health','player'),
+('set_armour','player'),
+('give_weapon','player'),
+('take_weapon','player'),
+('set_license','player'),
+('reset_player_data','player'),
+('weather_set','world'),
+('time_set','world'),
+('vehicle_spawn','world'),
+('vehicle_delete','world'),
+('vehicle_repair','world'),
+('vehicle_refuel','world'),
+('vehicle_color','world'),
+('vehicle_lock','world'),
+('vehicle_unlock','world'),
+('vehicle_respawn','world'),
+('vehicle_tune','world'),
+('vehicle_list','world'),
+('house_create','world'),
+('house_edit','world'),
+('house_delete','world'),
+('business_create','world'),
+('business_edit','world'),
+('business_delete','world'),
+('business_set_owner','world'),
+('business_reset','world'),
+('organization_edit','world'),
+('organization_set_leader','world'),
+('organization_set_rank','world'),
+('organization_invite','world'),
+('organization_kick','world'),
+('organization_storage','world'),
+('event_start','world'),
+('event_stop','world'),
+('event_reward','world'),
+('admin_chat','moderation'),
+('view_reports','moderation'),
+('answer_reports','moderation'),
+('clear_chat','moderation'),
+('broadcast_message','moderation'),
+('maintenance_mode','moderation'),
+('server_announce','moderation'),
+('server_restart','moderation'),
+('server_save','moderation'),
+('server_reload','moderation'),
+('ban_ip','moderation'),
+('unban_ip','moderation'),
+('view_banlist','moderation'),
+('edit_ban_reason','moderation'),
+('view_logs','moderation'),
+('export_logs','moderation'),
+('manage_anticheat','moderation'),
+('manage_flood_protection','moderation'),
+('manage_chat_filter','moderation'),
+('manage_nickname','moderation'),
+('manage_sessions','moderation'),
+('coin_balance_view','economy'),
+('coin_grant','economy'),
+('coin_deduct','economy'),
+('coin_adjust','economy'),
+('coin_ledger_view','economy'),
+('coin_order_view','economy'),
+('coin_order_approve','economy'),
+('coin_order_reject','economy'),
+('shop_item_create','economy'),
+('shop_item_edit','economy'),
+('shop_item_disable','economy'),
+('shop_purchase_refund','economy'),
+('shop_price_edit','economy'),
+('vip_grant','economy'),
+('vip_revoke','economy'),
+('donate_balance_view','economy'),
+('donate_adjust','economy'),
+('promo_create','economy'),
+('promo_disable','economy'),
+('promo_stats','economy'),
+('admin_panel_access','admins'),
+('admin_list_view','admins'),
+('admin_permission_view','admins'),
+('admin_permission_grant','admins'),
+('admin_permission_revoke','admins'),
+('admin_level_set','admins'),
+('admin_temp_suspend','admins'),
+('admin_unsuspend','admins'),
+('admin_audit_view','admins'),
+('admin_audit_export','admins');
+
+CREATE TABLE IF NOT EXISTS `lederg_admin_role_permissions` (
+  `role_name` varchar(24) NOT NULL,
+  `permission_key` varchar(64) NOT NULL,
+  `allowed` tinyint(1) NOT NULL DEFAULT 1,
+  PRIMARY KEY (`role_name`, `permission_key`),
+  KEY `idx_role_permission_key` (`permission_key`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Owner role receives the complete permission catalog. Keep OWNER assignment server-side.
+INSERT IGNORE INTO `lederg_admin_role_permissions` (`role_name`, `permission_key`, `allowed`)
+SELECT 'owner', `permission_key`, 1 FROM `lederg_admin_permissions`;
+
+CREATE TABLE IF NOT EXISTS `lederg_admin_user_permissions` (
+  `account_name` varchar(24) NOT NULL,
+  `permission_key` varchar(64) NOT NULL,
+  `allowed` tinyint(1) NOT NULL,
+  `granted_by` varchar(24) NOT NULL,
+  `granted_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`account_name`, `permission_key`),
+  KEY `idx_admin_perm_key` (`permission_key`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS `lederg_admin_audit` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `actor_name` varchar(24) NOT NULL,
+  `target_name` varchar(24) NOT NULL DEFAULT '',
+  `action_key` varchar(64) NOT NULL,
+  `details` varchar(500) NOT NULL DEFAULT '',
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  KEY `idx_admin_audit_actor_time` (`actor_name`, `created_at`),
+  KEY `idx_admin_audit_target_time` (`target_name`, `created_at`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS `lederg_wallets` (
+  `account_name` varchar(24) NOT NULL,
+  `coins_balance` bigint unsigned NOT NULL DEFAULT 0,
+  `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`account_name`),
+  CONSTRAINT `chk_lederg_wallet_nonnegative` CHECK (`coins_balance` >= 0)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS `lederg_coin_ledger` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `account_name` varchar(24) NOT NULL,
+  `delta` bigint NOT NULL,
+  `balance_after` bigint unsigned NOT NULL,
+  `reason` varchar(120) NOT NULL,
+  `reference_code` varchar(64) DEFAULT NULL,
+  `actor_name` varchar(24) NOT NULL DEFAULT 'system',
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  KEY `idx_coin_ledger_account_time` (`account_name`, `created_at`),
+  UNIQUE KEY `uq_coin_ledger_reference` (`reference_code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS `lederg_shop_items` (
+  `id` int unsigned NOT NULL AUTO_INCREMENT,
+  `sku` varchar(48) NOT NULL,
+  `title` varchar(100) NOT NULL,
+  `description` varchar(500) NOT NULL DEFAULT '',
+  `price_coins` bigint unsigned NOT NULL,
+  `item_type` varchar(32) NOT NULL,
+  `item_payload` varchar(255) NOT NULL DEFAULT '',
+  `enabled` tinyint(1) NOT NULL DEFAULT 1,
+  `sort_order` int NOT NULL DEFAULT 0,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `uq_lederg_shop_sku` (`sku`),
+  KEY `idx_lederg_shop_enabled_sort` (`enabled`, `sort_order`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS `lederg_coin_orders` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `order_code` varchar(32) NOT NULL,
+  `account_name` varchar(24) NOT NULL,
+  `coins_amount` bigint unsigned NOT NULL,
+  `payment_method` varchar(24) NOT NULL DEFAULT 'telegram_manual',
+  `payment_status` enum('pending','paid','rejected','cancelled') NOT NULL DEFAULT 'pending',
+  `telegram_contact` varchar(64) NOT NULL DEFAULT '@LEDERG_ru',
+  `payment_note` varchar(255) NOT NULL DEFAULT '',
+  `reviewed_by` varchar(24) NOT NULL DEFAULT '',
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `reviewed_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `uq_lederg_order_code` (`order_code`),
+  KEY `idx_lederg_orders_account_status` (`account_name`, `payment_status`, `created_at`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS `lederg_shop_purchases` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `account_name` varchar(24) NOT NULL,
+  `item_sku` varchar(48) NOT NULL,
+  `price_coins` bigint unsigned NOT NULL,
+  `status` enum('completed','refunded') NOT NULL DEFAULT 'completed',
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  KEY `idx_lederg_purchases_account_time` (`account_name`, `created_at`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Starter catalog: safe cosmetic/convenience rewards; adjust prices after playtesting.
+INSERT IGNORE INTO `lederg_shop_items` (`sku`, `title`, `description`, `price_coins`, `item_type`, `item_payload`, `sort_order`) VALUES
+('vip_7d', 'VIP на 7 дней', 'Временный VIP-статус на неделю', 100, 'vip_days', '7', 10),
+('vip_30d', 'VIP на 30 дней', 'Временный VIP-статус на месяц', 300, 'vip_days', '30', 20),
+('name_style', 'Стиль ника', 'Косметическая настройка ника', 150, 'cosmetic', 'nickname_style', 30),
+('vehicle_color', 'Цвет транспорта', 'Изменение цвета личного транспорта', 120, 'vehicle_cosmetic', 'color', 40);
+
