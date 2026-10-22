@@ -1,0 +1,25 @@
+# LEDERG PROJECT — CR:MP RolePlay
+
+Legacy Pawn/CR-MP roleplay gamemode, being rebranded in reviewable steps.
+
+- Server/game-mode name: **LEDERG PROJECT | CR:MP RolePlay**.
+- Faction display names: ID 5 **Бандера ОПГ**, ID 6 **LEDERG ОПГ**, ID 7 **Вагнер ОПГ**. Numeric IDs and database keys are preserved.
+- Removed recurring VK promotion while preserving auto-save calls.
+- Replaced old in-game TextDraw branding.
+- Removed hard-coded MySQL credential macros from the source.
+
+## Setup
+
+1. Use the compiler, server binary, and includes compatible with this legacy CR-MP build; record a baseline compile before any compiler upgrade.
+2. Copy `server.cfg.example` to `server.cfg`, set a unique strong RCON password, and use the port assigned by the provider.
+3. Copy `scriptfiles/mysql_settings.example.ini` to `scriptfiles/mysql_settings.ini` and enter the correct DB settings locally. Never commit the live file.
+4. Compile `gamemodes/new.pwn` and deploy the matching `gamemodes/new.amx`; do not ship a stale AMX after source changes.
+5. Test registration/login, database persistence, organization menus/GPS/storage, capture messages, and auto-save on staging.
+
+## Security warning
+
+Earlier public revisions contained runtime credentials and a SQL dump. Removing files from the current tree does **not** erase Git history. Rotate the affected MySQL and RCON credentials immediately and coordinate a history cleanup before considering the public repository clean. Never reuse old credentials.
+
+The included legacy LICENSE restricts distribution and derivative works. Verify rights to modify and redistribute the original server package and preserve upstream notices.
+
+See `docs/LEDERG-PROJECT-ROADMAP.md` for next steps.
