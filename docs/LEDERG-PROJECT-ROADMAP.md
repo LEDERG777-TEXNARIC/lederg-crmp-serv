@@ -5,7 +5,10 @@
 - [x] Rename faction display labels while preserving IDs 5, 6, and 7.
 - [x] Remove timed VK promotion without removing save operations.
 - [x] Remove hard-coded DB macros; add local config templates and ignore rules.
-- [ ] Rotate exposed credentials and clean sensitive Git history.
+- [ ] Rotate exposed credentials and clean sensitive Git history. (Do not reuse committed secrets.)
+- [x] Add clean SQL baseline and LEDERG coins/admin permission schema on feature branch.
+- [ ] Wire `/admledpanel` to real permission-checked Pawn actions; current permission catalogue alone is not a completed panel.
+- [ ] Implement and test atomic coin order approval and shop rewards in the game mode.
 - [ ] Compile matching `gamemodes/new.amx` with compatible compiler/includes.
 
 ## Slice 2 — reproducible build
