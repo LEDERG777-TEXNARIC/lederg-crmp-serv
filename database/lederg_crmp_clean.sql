@@ -1572,7 +1572,7 @@ CREATE TABLE IF NOT EXISTS `lederg_coin_ledger` (
   `delta` bigint NOT NULL,
   `balance_after` bigint unsigned NOT NULL,
   `reason` varchar(120) NOT NULL,
-  `reference_code` varchar(64) NOT NULL DEFAULT '',
+  `reference_code` varchar(64) DEFAULT NULL,
   `actor_name` varchar(24) NOT NULL DEFAULT 'system',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
